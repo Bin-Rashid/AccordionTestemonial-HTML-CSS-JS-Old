@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .accordion-header,
+    .accordion-body {
+        padding: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .accordion-body .row {
+        flex-direction: column;
+    }
+
+    .accordion-body .column {
+        width: 100%;
+    }
+
+    .accordion-body .row img {
+        max-width: 100%;
+    }
+}

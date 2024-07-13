@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nohemi:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-family: 'Nohemi', sans-serif;
+}
+/* Apply to specific elements if needed */
+.accordion-header,
+.accordion-body {
+    font-family: 'Nohemi', sans-serif;
+}
+
+.accordion {
+    max-width: 1440px;
+    margin: 20px auto;
+    background: #F4FCF9;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    background: #CBF7DD;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+.accordion-item.active {
+    background-color: #F4FCF9;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-left .number {
+    margin-right: 20px;
+}
+
+.accordion-header .year {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-header .year::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: #000;
+    margin-right: 10px;
+}
+
+.accordion-body {
+    display: none;
+    background-color: #F4FCF9;
+    padding: 40px;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.accordion-body .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+
+}
+
+.accordion-body.active {
+    display: block;
+}
+
+.accordion-body .client-image-body {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: calc(50% - 37px);
+}
+
+
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin-right: 40px;
+}
+
+.accordion-body .separator {
+    height: 1px;
+    background-color: #ddd;
+}
+
+.accordion-body .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.accordion-body .row img {
+    width: 100%;
+    max-width: 510px;
+    height: 395px;
+    object-fit: cover;
+}
